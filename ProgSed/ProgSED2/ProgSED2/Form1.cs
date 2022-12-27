@@ -50,5 +50,22 @@ namespace ProgSED2
         {
 
         }
+
+        private void buttonClick_Vxod(object sender, EventArgs e)
+        {
+            if (this.textBox1.Text == "" || this.textBox2.Text == "")
+            {
+                MessageBox.Show(
+                "Введите логин и пароль",
+                "Сообщение",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button1);
+            }
+
+            else { this.textBox1.Text = ""; this.textBox2.Text = ""; }
+
+        }
     }
+    
 }
