@@ -6,6 +6,10 @@ using System.Windows.Forms;
 
 namespace ProgSED2
 {
+    class CDocument
+    {
+
+    }
     static class Program
     {
         /// <summary>
