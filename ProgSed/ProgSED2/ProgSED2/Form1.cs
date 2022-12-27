@@ -23,9 +23,16 @@ namespace ProgSED2
        
         public void DataGridMethod()
         {
+<<<<<<< HEAD
             dataGridView1.Rows.Add(Doc[0].Number, Doc[0].Name, Doc[0].Status, Doc[0].Date_Start, Doc[0].Date_Finish );
             dataGridView1.Rows.Add(Doc[1].Number, Doc[1].Name, Doc[1].Status, Doc[1].Date_Start, Doc[1].Date_Finish);
             dataGridView1.Rows.Add(Doc[2].Number, Doc[2].Name, Doc[2].Status, Doc[2].Date_Start, Doc[2].Date_Finish);
+=======
+            for(int i = 0; i < Doc.Count; i++)
+            {
+                dataGridView1.Rows.Add(Doc[i].Number, Doc[i].Name, Doc[i].Status, Doc[i].Date_Start, Doc[i].Date_Finish);
+            }
+>>>>>>> Class
 
         }
 
@@ -38,7 +45,14 @@ namespace ProgSED2
         {
             
             Add add = new Add(Doc);
+<<<<<<< HEAD
             add.Show();
+=======
+            add.ShowDialog();
+            Doc.Add(add.GetDocument());
+            add.Clear();
+
+>>>>>>> Class
         }
 
         private void buttonClick_Redact(object sender, EventArgs e)
