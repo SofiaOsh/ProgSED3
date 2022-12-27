@@ -40,7 +40,7 @@ namespace ProgSED2
         private void buttonClick_Dobavit(object sender, EventArgs e)
         {
             
-            Add add = new Add(Doc);
+            Add add = new Add(bool true);
             add.ShowDialog();
             Doc.Add(add.GetDocument());
             add.Clear();
@@ -50,7 +50,8 @@ namespace ProgSED2
 
         private void buttonClick_Redact(object sender, EventArgs e)
         {
-
+            Add add = new Add(bool false);
+            add.ShowDialog();
         }
 
         private void buttonClick_Delete(object sender, EventArgs e)
