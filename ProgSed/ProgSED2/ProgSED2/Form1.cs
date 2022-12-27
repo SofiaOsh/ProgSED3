@@ -24,7 +24,8 @@ namespace ProgSED2
        
         public void DataGridMethod()
         {
-            for(int i = 0; i < Doc.Count; i++)
+            dataGridView1.Rows.Clear();
+            for (int i = 0; i < Doc.Count; i++)
             {
                 dataGridView1.Rows.Add(Doc[i].Number, Doc[i].Name, Doc[i].Status, Doc[i].Date_Start, Doc[i].Date_Finish);
             }
@@ -43,6 +44,7 @@ namespace ProgSED2
             add.ShowDialog();
             Doc.Add(add.GetDocument());
             add.Clear();
+            DataGridMethod();
 
         }
 
