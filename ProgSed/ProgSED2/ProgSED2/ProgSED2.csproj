@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CF0590BA-9C14-4B4B-8411-DEAAA2ECFA58}</ProjectGuid>
+    <ProjectGuid>{5D2232DC-5AC4-4B71-BC09-4686A8CFB929}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Prog</RootNamespace>
-    <AssemblyName>Prog</AssemblyName>
+    <RootNamespace>ProgSED2</RootNamespace>
+    <AssemblyName>ProgSED2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
