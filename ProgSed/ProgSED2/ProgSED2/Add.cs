@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Prog
+namespace ProgSED2
 {
     public partial class Add : Form
     {

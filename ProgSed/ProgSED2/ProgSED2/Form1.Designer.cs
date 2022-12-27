@@ -1,6 +1,6 @@
-﻿namespace Prog
+﻿namespace ProgSED2
 {
-    partial class Form1
+    partial class DataForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -61,7 +61,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataNachala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataFinish = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,7 +79,7 @@
             this.tabControl1.Location = new System.Drawing.Point(-2, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(989, 657);
+            this.tabControl1.Size = new System.Drawing.Size(989, 661);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -97,7 +97,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(981, 631);
+            this.tabPage1.Size = new System.Drawing.Size(981, 635);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Авторизация";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -157,7 +157,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -215,7 +214,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(981, 631);
+            this.tabPage2.Size = new System.Drawing.Size(981, 635);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Главная";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -228,6 +227,7 @@
             this.button5.TabIndex = 20;
             this.button5.Text = "Добавить";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.buttonClick_Dobavit);
             // 
             // button4
             // 
@@ -237,6 +237,7 @@
             this.button4.TabIndex = 19;
             this.button4.Text = "Удалить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.buttonClick_Delete);
             // 
             // button3
             // 
@@ -246,6 +247,7 @@
             this.button3.TabIndex = 18;
             this.button3.Text = "Редактировать";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.buttonClick_Redact);
             // 
             // button2
             // 
@@ -256,6 +258,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Найти";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.buttonClick_Nayti);
             // 
             // label10
             // 
@@ -358,7 +361,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Number,
-            this.Name,
+            this.NameV,
             this.Status,
             this.DataNachala,
             this.DataFinish});
@@ -390,11 +393,11 @@
             this.Number.Name = "Number";
             this.Number.Width = 238;
             // 
-            // Name
+            // NameV
             // 
-            this.Name.HeaderText = "Название";
-            this.Name.Name = "Name";
-            this.Name.Width = 250;
+            this.NameV.HeaderText = "Название";
+            this.NameV.Name = "NameV";
+            this.NameV.Width = 250;
             // 
             // Status
             // 
@@ -414,7 +417,7 @@
             this.DataFinish.Name = "DataFinish";
             this.DataFinish.Width = 150;
             // 
-            // Form1
+            // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -422,8 +425,8 @@
             this.Controls.Add(this.tabControl1);
             this.MaximumSize = new System.Drawing.Size(1000, 700);
             this.MinimumSize = new System.Drawing.Size(1000, 700);
-            //this.Name = "Form1";
-            this.Text = "Автоматизированная система учета договоров";
+            this.Name = "DataForm";
+            this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -448,7 +451,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
@@ -464,9 +466,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataNachala;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataFinish;

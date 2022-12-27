@@ -1,4 +1,4 @@
-﻿namespace Prog
+﻿namespace ProgSED2
 {
     partial class Add
     {
@@ -268,7 +268,7 @@
             this.MaximumSize = new System.Drawing.Size(700, 600);
             this.MinimumSize = new System.Drawing.Size(700, 600);
             this.Name = "Add";
-            this.Text = "Добавление и редактирование";
+            this.Text = "Add";
             this.ResumeLayout(false);
             this.PerformLayout();
 

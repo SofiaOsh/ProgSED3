@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Prog.Properties
+namespace ProgSED2.Properties
 {
 
 
