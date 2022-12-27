@@ -60,6 +60,7 @@
             this.button1.TabIndex = 41;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonClick_Save);
             // 
             // label10
             // 
@@ -190,6 +191,10 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "В работе",
+            "Завершен",
+            "Приостановлен"});
             this.comboBox2.Location = new System.Drawing.Point(417, 139);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(194, 21);
@@ -198,6 +203,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Публичный договор",
+            "Договор присоединения",
+            "Абонентский договор",
+            "Публичные торги"});
             this.comboBox1.Location = new System.Drawing.Point(77, 139);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(194, 21);

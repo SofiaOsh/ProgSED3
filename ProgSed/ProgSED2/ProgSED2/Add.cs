@@ -12,9 +12,15 @@ namespace ProgSED2
 {
     public partial class Add : Form
     {
-        public Add()
+        public Add(List<CDocument> doc)
         {
             InitializeComponent();
+        }
+
+        private void buttonClick_Save(object sender, EventArgs e)
+        {
+
+            this.Close();
         }
     }
 }

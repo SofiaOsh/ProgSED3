@@ -36,7 +36,8 @@ namespace ProgSED2
 
         private void buttonClick_Dobavit(object sender, EventArgs e)
         {
-            Add add = new Add();
+            
+            Add add = new Add(Doc);
             add.Show();
         }
 
