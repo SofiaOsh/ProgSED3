@@ -12,22 +12,16 @@ namespace ProgSED2
 {
     public partial class Add : Form
     {
-<<<<<<< HEAD
-=======
         CDocument cd = new CDocument();
         bool prov = false;
->>>>>>> Class
         public Add(List<CDocument> doc)
         {
             InitializeComponent();
+            comboBox1.SelectedItem = "Публичный договор";
+            comboBox2.SelectedItem = "В работе";
         }
 
-<<<<<<< HEAD
-        private void buttonClick_Save(object sender, EventArgs e)
-        {
-
-            this.Close();
-=======
+        //Сохраняет данные в лист, GetDocument передает в список
         public void buttonClick_Save(object sender, EventArgs e)
         {
             
@@ -52,10 +46,10 @@ namespace ProgSED2
         {
             return cd; 
         }
+        //Очищает список и делает пустым
         public void Clear()
         {
             cd = null;
->>>>>>> Class
         }
     }
 }

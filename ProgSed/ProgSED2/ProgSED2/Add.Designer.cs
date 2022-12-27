@@ -53,16 +53,6 @@
             // 
             // buttonsave
             // 
-<<<<<<< HEAD
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(517, 495);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 27);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Сохранить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonClick_Save);
-=======
             this.buttonsave.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonsave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonsave.Location = new System.Drawing.Point(517, 495);
@@ -72,7 +62,6 @@
             this.buttonsave.Text = "Сохранить";
             this.buttonsave.UseVisualStyleBackColor = true;
             this.buttonsave.Click += new System.EventHandler(this.buttonClick_Save);
->>>>>>> Class
             // 
             // label10
             // 

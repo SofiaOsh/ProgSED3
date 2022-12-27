@@ -6,10 +6,7 @@ using System.Windows.Forms;
 
 namespace ProgSED2
 {
-<<<<<<< HEAD
-=======
     
->>>>>>> Class
     public class CDocument
     {
 
@@ -25,19 +22,10 @@ namespace ProgSED2
         public DateTime Date_Start;
         public DateTime Date_Finish;
 
-<<<<<<< HEAD
-        CDocument()
-        {
-            Name = Status = Type = Author_1 = Author_2 = Number = Comments = "";
-            Summa = 0;
-            var Date_Start = new DateTime(1, 1, 1900);
-            var Date_Finish = new DateTime(1, 1, 9999);
-=======
         public CDocument()
         {
             Name = Status = Type = Author_1 = Author_2 = Number = Comments = "";
             Summa = 0;
->>>>>>> Class
         }
         public CDocument(string na, string st, string ty, string a1, string a2, string nu, string co, int su, DateTime ds, DateTime df)
         {
@@ -64,10 +52,6 @@ namespace ProgSED2
  
     static class Program
     {
-<<<<<<< HEAD
-
-=======
->>>>>>> Class
         [STAThread]
         static void Main()
         {
@@ -75,15 +59,8 @@ namespace ProgSED2
             Application.SetCompatibleTextRenderingDefault(false);
 
             List<CDocument> Doc = new List<CDocument>();
-<<<<<<< HEAD
-
-            Doc.Add(new CDocument("орв", "fdwed", "dfc", "sfc", "efdce", "sfrvg", "gv", 3234, new DateTime(2000, 12, 12), new DateTime(2022, 11, 12)));
-            Doc.Add(new CDocument("орв", "fdwed", "dfc", "sfc", "efdce", "sfrvg", "gv", 3234, new DateTime(2000, 12, 12), new DateTime(2022, 11, 12)));
-            Doc.Add(new CDocument("орв", "fdwed", "dfc", "sfc", "efdce", "sfrvg", "gv", 3234, new DateTime(2000, 12, 12), new DateTime(2022, 11, 12)));
-=======
             Doc.Add(new CDocument("орв", "fdwed", "dfc", "sfc", "efdce", "sfrvg", "gv", 3234, new DateTime(2000, 12, 12), new DateTime(2022, 11, 12)));
             
->>>>>>> Class
             Application.Run(new DataForm(Doc));
 
          }
